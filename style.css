@@ -15,6 +15,10 @@
     "SideA Article1 Article1 Article2 Article2 SideB"
     "Foot Foot Foot Foot Foot Foot";
 }
+.Nav ul{
+    position: sticky;
+    top: 0%;
+}
 nav{
     height: 100px;
     background-color: rgb(53, 250, 250);
@@ -70,6 +74,22 @@ nav{
 .foot{
     grid-area: footer;
 } */
+.up{
+    float: right;
+}
+
+.SideB img{
+    height: 40px;
+    width: 40px;
+    
+}
+.Foot img{
+    /* display: inline-block; */
+    float: left;
+    height: 40px;
+    width: 40px;
+    
+}
 .Article1 img{
     width: 620px;
 }
@@ -188,62 +208,25 @@ ul li a:hover{
     width: 300px;
     height: 300px;
 }
-/* [class*="col-"] {
-    width: 100%;
-  }
 
-for phones
-
-@media only screen and (min-width: 600px) {
-    for tablets
-    .Nav {width: 100%;}
-    .SideA {width: 2%;}
-    .Name-sec {width: 100%;}
-    .SideB {width: 2%;}
-    .Port {width: 100%;}
-    .Google {width: 24%;}
-    .Tribute {width: 24%;}
-    .Form {width: 24%;}
-    .Cyann {width: 24%;}
-    .About {width: 100%;}
-    .Article1 {width: 48%;}
-    .Article2 {width: 48%;}
-    .Foot {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-    for desktop
-    .Nav {width: 100%;}
-    .SideA {width: 2%;}
-    .Name-sec {width: 100%;}
-    .SideB {width: 2%;}
-    .Port {width: 100%;}
-    .Google {width: 24%;}
-    .Tribute {width: 24%;}
-    .Form {width: 24%;}
-    .Cyann {width: 24%;}
-    .About {width: 100%;}
-    .Article1 {width: 48%;}
-    .Article2 {width: 48%;}
-    .Foot {width: 100%;}
-} */
 .menu-icon{
     width: 40px;
     cursor: pointer;
     display: none;
 }
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 319px){
     .parent{
         height: 600vh;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 320px) {
     .Nav ul{
-        width: 100%;
+        width: 50%;
         background-color: teal;
         display: block;
         position: absolute;
         top: 50px;
-        right: 0;
+        left: 0;
         z-index: 2;
     }
     .Nav ul li{
@@ -257,7 +240,7 @@ for phones
         display: block;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 319px) {
     .Name-sec h1{
         width: 100%;
         font-size: 60px;
@@ -287,7 +270,7 @@ for phones
         top: ;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 319px) {
     .Port h2{
         width: 100%;
         font-size: 60px;
@@ -309,7 +292,7 @@ for phones
         z-index: 2;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 319px) {
     .Google button{
         width: 100%;
         position: absolute;
@@ -339,7 +322,7 @@ for phones
         z-index: 2;
     }
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 319px){
     .Article1 img{
         width: 100%;
         background-color: teal;
@@ -356,7 +339,7 @@ for phones
         z-index: 2;
     }
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 319px){
     .Article2 img{
         width: 100%;
         background-color: teal;
@@ -372,7 +355,7 @@ for phones
         right: 0;
         z-index: 2;
     }
-}
+} */
 /* @media only screen and (max-width: 700px) {
     .Foot h2{
         width: 100%;
@@ -425,3 +408,89 @@ for phones
         z-index: 2;
     }
 } */
+
+@media only screen and (max-width: 947px) {
+    .menu-icon{
+        display: block;
+        z-index: 999;
+    }
+    .Nav ul{
+        width: 100%;
+        height: 100vh;
+        background-color: teal;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding-top: 80px;
+        
+    }
+    .Nav li{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        float: right;
+    }
+    .Nav li a{
+        margin: 20px 0;
+        display: inline-block;
+        font-size: 25px;
+        
+    }
+}
+    
+
+@media only screen and (max-width: 991px) {
+   
+    .Nav ul{
+        width: 100%;
+        height: 100vh;
+        background-color: teal;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding-top: 80px;
+        
+    }
+    .Nav li{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        float: right;
+    }
+    .Nav li a{
+        margin: 20px 0;
+        display: inline-block;
+        font-size: 25px;
+        
+    }
+    .Name-sec h1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 100px;
+    }
+    .Name-sec p{
+        color: gray;
+        font-size: 40px;
+    }
+    .Name-sec button{
+        height: 50px;
+        width: 200px;
+        background-color: rgb(4, 88, 88);
+    }
+    .Name-sec button:hover{
+        border: 2px solid cyan;
+    }
+    
+    .Name-sec button a{
+        font-size: 30px;
+        color: rgb(46, 248, 248);
+        text-decoration: none;
+    }
+}
+    
